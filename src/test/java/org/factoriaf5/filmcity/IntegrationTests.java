@@ -139,13 +139,13 @@ class IntegrationTests {
     @Test
     void setMovieScoreById() throws Exception {
         Movie movie = movieRepository.save(new Movie("Jurassic Park", "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/oU7Oq2kFAAlGqbU4VoAE36g4hoI.jpg", "Steven Spielberg", 1993, "A wealthy entrepreneur secretly creates a theme park featuring living dinosaurs drawn from prehistoric DNA.", null, false,0));
-        mockMvc.perform(put("/movies/"+ movie.getId()+ "/rating")
+        mockMvc.perform(put("/movies/" + movie.getId() + "/rating")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content("{" + "\"score\":  "+3+" }")
+                .content("{" + "\"score\":  " + 4 + " }")
         ).andExpect(status().isOk());
         List<Movie> movies = movieRepository.findAll();
         assertThat(movies, (contains(allOf(
-                hasProperty("score", is(3))
+                hasProperty("score", is(4))
         ))));
     }
 
