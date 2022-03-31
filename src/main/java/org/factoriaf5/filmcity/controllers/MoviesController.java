@@ -35,11 +35,12 @@ public class MoviesController {
     }
 
     @DeleteMapping("/movies/{id}")
-    public Movie deleteMovieById(@PathVariable Long id) {
-        Movie movie = movieRepository.findById(id).orElseThrow(MoviesNotFoundException::new);
+    public Long deleteMovieById(@PathVariable Long id) {
+        //Movie movie = movieRepository.findById(id).orElseThrow(MoviesNotFoundException::new);
         movieRepository.deleteById(id);
-        return movie;
+        return id;
     }
+
     @PutMapping("/movies")
     public Movie updateMovieById(@RequestBody Movie movie) {
         movieRepository.findById(movie.getId()).orElseThrow(MoviesNotFoundException::new);
