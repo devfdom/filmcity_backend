@@ -172,7 +172,7 @@ Set the movie with an specific ID as rented by the input name
 
 ### Request
 
-``PUT http://localhost:8080/movies/1/book?renter=Carlitos``
+``PUT http://localhost:8080/movies/1/book?renter=DJ Martí``
 
 ### Response
 
