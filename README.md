@@ -1,4 +1,4 @@
-# ![Image text](https://github.com/domofra/filmcity/blob/main/filmcity.png)
+# ![Image text](filmcity.png)
 
 FilmCity is our latest REST API based on the Java framework Spring Boot.
 
@@ -172,7 +172,7 @@ Set the movie with an specific ID as rented by the input name
 
 ### Request
 
-``PUT http://localhost:8080/movies/1/book?renter=DJ Martí``
+``PUT http://localhost:8080/movies/1/book?renter=djMartí``
 
 ### Response
 
