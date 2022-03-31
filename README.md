@@ -1,4 +1,4 @@
-# FilmCity
+# ![Image text](https://github.com/domofra/filmcity/blob/main/filmcity.png)
 
 FilmCity is our latest REST API based on the Java framework Spring Boot.
 
